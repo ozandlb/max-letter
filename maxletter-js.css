@@ -1,0 +1,32 @@
+.input {
+	clear: both;
+	float: left;
+	width: 150px;
+	padding-left: 5px;
+	}
+
+.output {
+	float: left;
+	margin-left: 5px; 
+	width: 150px;
+	padding-left: 5px;
+	}
+
+.header {
+	margin-top:15px;
+	font-weight: 800;
+	background-color: #efefef;
+	text-align: center;
+	border-color: #cccccc; 
+	border-style: solid;
+	border-width: 1px;
+	}
+
+.note {
+	clear: both;
+	padding: 5px;
+	border-color: #cccccc; 
+	border-style: solid;
+	border-width: 1px;
+	background-color: #efefef;
+	}

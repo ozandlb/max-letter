@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Most Frequent Letter Function</title>
+
+<script language="JavaScript" type="text/javascript" src="maxletter-js.js"></script>
+<style type="text/css" src="maxletter-js.css"></style>
+<link rel="stylesheet" type="text/css" href="maxletter-js.css" />
+
+</head>
+
+<body onLoad="javascript:
+	execMaxLetter(document.getElementById('text1').innerHTML, 'output1');
+	execMaxLetter(document.getElementById('text2').innerHTML, 'output2');
+	execMaxLetter(document.getElementById('text3').innerHTML, 'output3');
+	">
+
+<h2>Most Frequent Letter ("MFL")</h2>
+
+<div class="note"><strong>Note:</strong><br />
+Function is written in JavaScript.<br />
+Function returns an array. If a letter occurs with the same frequency as one or more other letters, all such letters are returned.<br />
+Function returns only letters, and ignores blank spaces, numbers and other non-letter characters.<br />
+Function makes no distinction between uppercase and lowercase letters.<br />
+Function efficiency is O(2N)<br />
+</div>
+
+
+<div class="input header">Example String</div>
+	<div class="output header" >MFL</div>
+<div class="input" id="text1">aaabbbcccde</div>
+	<div class="output" id="output1"> </div>
+<div class="input" id="text2">####3333ff</div>
+	<div class="output" id="output2"> </div>
+<div class="input" id="text3">GGGhhHH</div>
+	<div class="output" id="output3"> </div>
+
+<div style="clear:both"> </div>
+
+<div class="input header">Free Input String</div>
+	<div class="output header" >MFL</div>
+
+<div class="input">
+	<form name="myform" action="javascript:execMaxLetter(document.getElementById('inputText').value, 'inputDiv');">
+		<input type="text" size="15" id="inputText" name="mytext" 
+			onchange="javascript:execMaxLetter(document.getElementById('inputText').value, 'inputDiv');" /> 
+		<input type="submit" value="Find MFL" onClick="javascript:submitform()" />
+	</form>
+</div>
+
+<div class="output" id="inputDiv"> </div>
+
+
+<script language="JavaScript" type="text/javascript">
+
+function submitform() {
+	document.myform.submit();
+}
+
+</script>
+
+</body>
+
+</html>
